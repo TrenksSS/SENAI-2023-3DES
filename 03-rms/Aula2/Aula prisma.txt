@@ -1,0 +1,16 @@
+Para instalar o prisma na maquina:
+
+npm i -g prisma
+
+Iniciar o prisma:
+
+prisma nit --datasource-provider mysql
+
+configurar o .ENV
+
+substituir 
+
+
+
+
+prisma migrate dev --name
