@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(175, 177, 179);
+}
+header{
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color:  rgb(8, 216, 181);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+}
+main{
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-color: rgb(175, 177, 179);
+}
+.cont{
+    display: flex;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+#cab1{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+#btnn{
+    left: 80vw;
+    top: 3vh;
+    position: absolute;
+}
+#btnnn{
+    left: 86vw;
+    top: 3vh;
+    position: absolute;
+}
+#btns{
+    left: 74vw;
+    top: 3vh;
+    position: absolute;
+}
+#plusprod{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(8, 216, 181);
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;   
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#imgp{
+    width: 40px;
+}
+#rs{
+    display: flex;
+    margin: 10px;
+}
+#set{
+    display: flex;
+}
+#nome{
+    margin-top: 50px;
+}
+
+#card1{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+#card2{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+.cad{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.cadinp{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.cab_cad{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nprod{
+    top: 150px;
+    left: 30px;
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold   
+}
+#nset{
+    top: 150px;
+    left: 30px;
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold   
+}
+#vprod{
+    top: 150px;
+    left: 500px;
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold
+}
+#vset{
+    top: 150px;
+    left: 500px;
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold
+}
+#sprod{
+    top: 250px;
+    left: 400px;
+    position: absolute;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    font-weight: bold
+}
+.btn{
+    top: 90%;
+    left: 280px;
+    position: absolute;
+}
+#cadprod{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(8, 216, 181);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#canc{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(255, 50, 50);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.model{
+    display: none;
+}
+.sets{
+    
+}

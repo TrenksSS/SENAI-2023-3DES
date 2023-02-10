@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/prisma.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>LOJA PRISMA</title>
+</head>
+
+<body onload="mostrar()">
+    <header>
+        <div id="cab1">
+            <img class="logo" src="assets/prisma.png" alt="">
+            <h1>LOJA PRISMA</h1>
+        </div>
+
+        <div id="btnn">
+            <button id="plusprod" onclick="abreCad()">+ PRODUTO</button>
+        </div>
+        <div id="btnnn">
+            <button id="plusprod" onclick="abreCad2()">+ SETOR</button>
+        </div>
+        <div id="btns">
+            <button id="plusprod" onclick="abreCad2()">SETORES</button>
+        </div>
+    </header>
+    <main>
+        <div class="cont">
+            <div class="list model">
+                <h2>PRODUTO</h2>
+
+                <img id="imgp" src="assets/prisma.png" alt="">
+                <div id="nome">Camisa</div>
+                <div id="rs">
+                    <p>R$</p>
+                    <div id="valor">R$ 50,00</div>
+                </div>
+                <div id="set">
+                    <p>SETOR  </p>
+                    <div id="setor">1</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="card1">
+        <div class="cad">
+            <div class="cab_cad">
+                <img class="logo" src="assets/prisma.png" alt="">
+                <h2>PRISMA CADASTRO DE PRODUTO</h2>
+            </div>
+
+            <div id="nprod">
+                <p>NOME DO PRODUTO</p>
+                <input id="nnprod" class="cadinp" type="text">
+            </div>
+            <div id="vprod">
+                <p>VALOR</p>
+                <input id="vvprod" class="cadinp" type="text">
+            </div>
+            <div id="sprod">
+                <p>SETOR</p>
+                <select id="ssprod">
+                    <option value="1">ROUPAS</option>
+                    <option value="2">FERRAMENTAS</option>
+                    <option value="3"></option>
+                </select>
+            </div>
+            <div class="btn">
+                <button id="canc" onclick="fechaCad()">CANCELAR</button>
+                <button id="cadprod" onclick="postar()">CADASTRAR</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="card2">
+        <div class="cad">
+            <div class="cab_cad">
+                <img class="logo" src="assets/prisma.png" alt="">
+                <h2>PRISMA CADASTRO DE SETOR</h2>
+            </div>
+
+            <div id="nset">
+                <p>NOME DO SETOR</p>
+                <input id="nnset" class="cadinp" type="text">
+            </div>
+            <div id="vset">
+                <p>COMISSÂO</p>
+                <input id="vvset" class="cadinp" type="text">
+            </div>
+            <div class="btn">
+                <button id="canc" onclick="fechaCad2()">CANCELAR</button>
+                <button id="cadprod" onclick="postar2()">ADICIONAR</button>
+            </div>
+        </div>
+    </div>
+    <div id="card3">
+        <div class="sets">
+            <img class="logo" src="assets/prisma.png" alt="">
+            <h2>PRISMA SETORES</h2>
+        </div>
+        <div class="cad">
+            <div id="nset">
+                <p>NOME DO SETOR</p>
+                <p>ROUPAS</p>
+            </div>
+            <div id="vset">
+                <p>COMISSÂO</p>
+                <p>10%</p>
+            </div>
+            <div class="btn">
+                <button id="canc" onclick="fechaCad2()">CANCELAR</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
