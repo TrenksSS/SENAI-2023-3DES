@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    height: 100vh;
+    background-color: black;
+}
+
+main{
+    position: absolute;
+    background-color: rgb(214, 214, 214);
+    width: 83vw;
+    height: 98vh;
+    top: 1vh;
+    right: 1vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#logo1{
+    width: 50px;
+    height: 50px;
+}
+#t1{
+    color: white;
+}
+.abas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    width: 13vw;
+    height: 4vh;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 6px 6px;
+}
+.abas:hover{
+    transition: 0.5s;
+    width: 13.2vw;
+    height: 4.2vh;
+}
