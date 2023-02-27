@@ -19,6 +19,7 @@ header{
 }
 
 main{
+    display: flex;
     position: absolute;
     background-color: rgb(214, 214, 214);
     width: 83vw;
@@ -28,7 +29,14 @@ main{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+.t1{
+    width: 30px;
+    height: 30px;
+}
+.t2{
+    width: 40px;
+    height: 40px;
+}
 #logo1{
     width: 50px;
     height: 50px;
@@ -51,4 +59,59 @@ main{
     transition: 0.5s;
     width: 13.2vw;
     height: 4.2vh;
+}
+
+/* Pagina home ---------------------------------------------------------------------- */
+
+#hhome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    border-radius: 15px; 
+    top: 20px;
+    left:  50px;
+    width: 25vw;
+    height: 10vh;
+}
+#areaf{
+    position: absolute;
+    border-radius: 15px;
+    border-color: black;
+    border: 10px;
+    top: 40px;
+    right:  20px;
+    width: 15vw;
+    height: 40vh;
+    background-color: white;
+}
+
+#veiculosd{
+    background-color: white;
+    position: absolute;
+    border-radius: 15px; 
+    top: 40px;
+    left:  580px;
+    width: 35vw;
+    height: 40vh;
+}
+
+#b1{
+    background-color: white;
+    position: absolute;
+    border-radius: 15px; 
+    top: 150px;
+    left:  50px;
+    width: 25vw;
+    height: 80vh;
+}
+#b2{
+    background-color: white;
+    position: absolute;
+    border-radius: 15px; 
+    top: 480px;
+    left:  580px;
+    width: 25vw;
+    height: 45vh;
 }
