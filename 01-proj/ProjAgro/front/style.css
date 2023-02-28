@@ -206,7 +206,7 @@ area do veiculo ------------------------------------------------------- */
     position: absolute;
     font-size: 25px;
     top: 100px;
-    left: 10px;
+    left: 20px;
 }
 
 #modc{
@@ -214,5 +214,21 @@ area do veiculo ------------------------------------------------------- */
     position: absolute;
     font-size: 25px;
     top: 150px;
-    left: 10px;
+    left: 20px;
+}
+
+#stv{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    top: 150px;
+    right: 20px;
+}
+
+#estv{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    top: 190px;
+    right: 20px;
 }

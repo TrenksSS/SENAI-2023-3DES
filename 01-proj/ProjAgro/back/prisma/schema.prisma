@@ -22,4 +22,6 @@ model Veiculo{
   modelo String
   tipo String
   status String
+  estado String
+  ultimaManutencao DateTime
 }
