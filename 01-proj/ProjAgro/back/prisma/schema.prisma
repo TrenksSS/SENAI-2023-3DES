@@ -11,17 +11,17 @@ datasource db {
 }
 
 model Usuario {
-id Int @id @default(autoincrement())
-nome String
-email String
-cpf String
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String
+  cpf   String
 }
 
-model Veiculo{
-  id Int @id @default(autoincrement())
-  modelo String
-  tipo String
-  status String
-  estado String
+model Veiculo {
+  id               Int      @id @default(autoincrement())
+  modelo           String
+  tipo             String
+  status           String
+  estado           String
   ultimaManutencao DateTime
 }
