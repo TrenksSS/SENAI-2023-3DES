@@ -13,8 +13,10 @@ body{
 }
 
 #card1{
+    justify-content: center;
+    display: flex;
     position: relative;
-    width: 45vw;
+    width: 20vw;
     height: 45vh;
     background-color: aliceblue;
     border-radius: 10px;
@@ -23,7 +25,7 @@ body{
 
 #imgl{
     position: absolute;
-    left: 10px;
+    left: 160px;
     top: 10px;
     width: 50px;
     height: 50px;
@@ -31,8 +33,8 @@ body{
 #titulo{
     font-size: 30px;
     position: absolute;
-    left: 90px;
-    top: 20px;
+    left: 80px;
+    top: 60px;
     font-weight: bold;
 }
 #nomel{
@@ -43,8 +45,8 @@ body{
     display: flex;
 }
 #senhal{
-    top: 150px;
-    left: 450px;
+    top: 200px;
+    left: 20px;
     position: absolute;
     display: flex;
 }
@@ -62,4 +64,88 @@ body{
     width: 200px;
     height: 30px;
     border-radius: 10px;
+}
+
+#bb{
+    position: absolute;
+    top: 280px;
+    left: 150px;
+    
+}
+
+#blog{
+    cursor: pointer;
+    cursor: ;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(145, 226, 142);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#flog{
+    
+    display: flex;
+    position: absolute;
+    width: 18vw;
+    left: 40px;
+    top: 390px;
+    font-size: 12px;
+}
+
+#msg{
+    color:rgb(70, 184, 66); 
+    cursor: pointer;
+}
+
+#card2{
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    position: relative;
+    width: 20vw;
+    height: 45vh;
+    background-color: aliceblue;
+    border-radius: 10px;    
+}
+#x{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#msg1{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+#msg2{
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+#admvl{
+    position: absolute;
+    top: 140px;
+}
+
+#emailmsg{
+    position: absolute;
+    top: 340px;
+    width: 300px;
+}
+#emsg{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(145, 226, 142);
+    bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

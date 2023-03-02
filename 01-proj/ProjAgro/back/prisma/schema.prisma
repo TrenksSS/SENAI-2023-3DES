@@ -25,3 +25,9 @@ model Veiculo {
   estado           String
   ultimaManutencao DateTime
 }
+
+model Mensagens {
+  id               Int      @id @default(autoincrement())
+  mensagem String
+  email String
+}
