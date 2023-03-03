@@ -31,3 +31,31 @@ const login = () => {
     })
 }
 
+function postar(){
+    let data = {}
+
+    let body = {
+        "mensagem": document.querySelector("#admvl").value,
+        "email": document.querySelector("#emailmsg").value,
+    }
+    const options = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+    };
+    options.body = JSON.stringify(body)
+    if (body.mensagem.length > 0 && body.email.length > 0) {
+        fetch("http://localhost:3000/mensagem", options)
+            .then(resp => resp.status)
+            .then(data => {
+                if (data == 200) {
+                    alert("Mensagem enviada ✔")
+                    window.location.reload()
+                } else {
+                    alert("Erro ao enviar Post ❗")
+                }
+            })
+            .catch(err => alert("❌ Erro ao enviar dados. Erro:" + err));
+    } else {
+        alert("Preencha todos os campos obrigatórios ❗")
+    }
+}

@@ -15,6 +15,7 @@ model Usuario {
   nome  String
   email String
   cpf   String
+  nivel String
 }
 
 model Veiculo {
