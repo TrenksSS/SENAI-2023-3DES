@@ -113,6 +113,9 @@ main{
 }
 
 #b1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     position: absolute;
     border-radius: 15px; 
@@ -231,4 +234,15 @@ area do veiculo ------------------------------------------------------- */
     font-size: 25px;
     top: 190px;
     right: 20px;
+}
+
+/* area de todos os veiculos --------------------------------------- */
+
+.vt{
+    background-color: rgb(216, 216, 216);
+    width: 20vw;
+    height: 9vh;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
