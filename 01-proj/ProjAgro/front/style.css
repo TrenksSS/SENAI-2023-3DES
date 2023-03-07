@@ -46,6 +46,7 @@ main{
 }
 .abas{
     display: flex;
+    cursor: pointer;
     justify-content: center;
     align-items: center;
     margin-top: 2vh;
@@ -186,6 +187,8 @@ main{
     font-size: 20px;
 }
 #nfun{
+    cursor: pointer;
+    border: 0;
     position: absolute;
     right: 10px;
     border-radius: 10px;
@@ -195,6 +198,25 @@ main{
     background-color: rgb(128, 240, 113);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+#nfun:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#ncar{
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    left: 10px;
+    border-radius: 10px;
+    bottom: 10px;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(128, 240, 113);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#ncar:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
 
 /* 
 area do veiculo ------------------------------------------------------- */
@@ -245,4 +267,91 @@ area do veiculo ------------------------------------------------------- */
     border-radius: 10px;
     margin-top: 15px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.vt{
+    display: flex;
+    position: relative;
+
+}
+
+.vtm{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+.vts{
+    position: absolute;
+    top: 32px;
+    left: 10px;
+      display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+.vtc{
+     position: absolute;
+    top: 55px;
+    left: 10px;
+      display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnv{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(58, 250, 58);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#btnv:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.btnv{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+/* cards modais ------------------------------- */
+
+#card1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+#modal_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    width: 50vw;
+    height: 60vh;
+    background-color: aliceblue;
+}
+#sair_modal_s{
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#dessol{
+    margin-top: 20px;
+    width: 20vw;
+    height: 5vh;
+
 }

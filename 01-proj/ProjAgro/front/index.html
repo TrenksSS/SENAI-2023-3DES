@@ -47,6 +47,9 @@
             <button id="nfun">
                 movo funcionário
             </button>
+            <button id="ncar">
+                + Veiculo
+            </button>
         </div>
 
         <div id="veiculosd">
@@ -65,30 +68,33 @@
                 <p>Em rota</p>
             </div>
             <div id="estv">
-                <p>Estado:</p>
+                <p>Estado:</p>'
                 <p>Ok</p>
-            </div>
+            </div>'
         </div>
 
         <div id="b1">
             <p>Veiculos</p>
             <div class="vt">
-                <p>Modelo</p>
-                <p id="modvt">Fiat uno</p>
-                <p>Status</p>
+                <div class="vtm">
+                    <p>Modelo :</p>
+                    <p id="modvt">Fiat uno</p>
+                </div>
+                <div class="vts">
+                    <p>Status :</p>
+                    <p>Livre</p>
+                </div>
+                <div class="vtc">
+                    <p>Condição :</p>
+                    <p>Bom Estado</p>
+                </div>
+                <div class="btnv">
+                    <button id="btnv" onclick="abrirmodal1()">
+                        Solicitar
+                    </button>
+                </div>
             </div>
 
-            <div class="vt">
-                <p>Modelo</p>
-                <p id="modvt">Fiat uno</p>
-                <p>Status</p>
-            </div>
-
-            <div class="vt">
-                <p>Modelo</p>
-                <p id="modvt">Fiat uno</p>
-                <p>Status</p>
-            </div>
         </div>
 
         <div id="b2">
@@ -99,5 +105,15 @@
 
         </div>
     </main>
+    <div id="card1">
+        <div id="modal_s">
+            <p id="sair_modal_s" onclick="fecharmodal1()">x</p>
+            
+            <h1>Deseja solicitar este veiculo</h1>
+            <p>Descrição</p>
+            <input id="dessol" type="text">
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
