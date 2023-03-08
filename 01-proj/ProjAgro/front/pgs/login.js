@@ -1,3 +1,6 @@
+
+
+
 function abrirmsg() {
     let card = document.querySelector("#card2")
     card.style = "display:flex"
@@ -9,24 +12,29 @@ function fecharmsg() {
 }
 const login = () => {
     let usuario = {
-        "email": nome.value,
-        "senha": psw.value
+        "email": document.querySelector("#emailu").value,
+        "senha": document.querySelector("#senhau").value
     }
 
-    fetch(uriLogin, {
+    fetch("http://localhost:3000/login", {
         'method':'POST',
         'headers': {
             'Content-Type':'application/json'
         },
         body: JSON.stringify(usuario)
-    }).then(response => { return response.json() })
+    }).then(response => { return response.status })
     .then(info => {
-        if(info[0] =! undefined) {
-            console.log(info);
-            localStorage.setItem('usuario',JSON.stringify({"nome":info.nome_user,"nascimento":info.data_nasci,"id":info.id, "userName":info.nickname, "email":info.email,"rola":info.role_stats, "img":info.avatar}));
-            window.location.href = "../index.html"
+        if(info != null ) {
+            console.log(info)
+            if(info == 201){
+                alert('❌ Erro no Login: SENHA INVÁLIDA!')
+            } else if(info == 404){
+                alert('❌ Erro no Login: Usuario não ENCONTRADO!')
+            }else if(info == 200){
+                window.location.href = "../index.html"
+            }
         } else {
-            alert(' ❌ Erro no Login, usuário ou  senha incorreta!');
+            alert(' ❌ Erro no Login:' + info);
         }
     })
 }

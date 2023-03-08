@@ -14,7 +14,7 @@ model Usuario {
   id    Int    @id @default(autoincrement())
   nome  String
   email String
-  cpf   String
+  senha   String
   nivel String
 }
 
@@ -24,7 +24,7 @@ model Veiculo {
   tipo             String
   status           String
   estado           String
-  ultimaManutencao DateTime
+  ultimaManutencao String
 }
 
 model Mensagens {

@@ -8,6 +8,7 @@ const msg = require('../controller/mensagem');
 
 router.post('/usuario', usuario.create);
 router.get('/usuarios', usuario.read);
+router.post('/login' , usuario.login)
 
 router.post('/veiculo', veiculo.create);
 router.get('/veiculos', veiculo.read);

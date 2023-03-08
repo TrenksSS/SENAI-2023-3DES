@@ -17,12 +17,6 @@
             <img class="t1" src="assets/botao-de-inicio.png" alt="botão home">
             <h2>Home</h2>
         </div>
-        <div class="abas">
-            <h1>Veiculos</h1>
-        </div>
-        <div class="abas">
-
-        </div>
     </header>
     <main>
         <div id="hhome">
@@ -47,12 +41,45 @@
             <button id="nfun">
                 movo funcionário
             </button>
-            <button id="ncar">
+            <button onclick="abrirmodal2()" id="ncar">
                 + Veiculo
             </button>
         </div>
 
         <div id="veiculosd">
+
+        </div>
+
+        <div id="b1">
+            <p>Veiculos</p>
+            <div class="vt model">
+                <div class="vtm">
+                    <p>Modelo :</p>
+                    <p id="modvt"></p>
+                </div>
+                <div class="vts">
+                    <p>Status :</p>
+                    <p id="sta"></p>
+                </div>
+                <div class="vtc">
+                    <p>Condição :</p>
+                    <p id="est"></p>
+                </div>
+                <div class="btnv">
+                    <button id="btnv" onclick="abrirmodal1()">
+                        Solicitar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="b2">
+
+        </div>
+
+        <div id="b3">
+
             <img id="crf" src="assets/carro.png" alt="carro">
             <div id="idc">
                 <p>ID:</p>
@@ -71,37 +98,6 @@
                 <p>Estado:</p>'
                 <p>Ok</p>
             </div>'
-        </div>
-
-        <div id="b1">
-            <p>Veiculos</p>
-            <div class="vt">
-                <div class="vtm">
-                    <p>Modelo :</p>
-                    <p id="modvt">Fiat uno</p>
-                </div>
-                <div class="vts">
-                    <p>Status :</p>
-                    <p>Livre</p>
-                </div>
-                <div class="vtc">
-                    <p>Condição :</p>
-                    <p>Bom Estado</p>
-                </div>
-                <div class="btnv">
-                    <button id="btnv" onclick="abrirmodal1()">
-                        Solicitar
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="b2">
-
-        </div>
-
-        <div id="b3">
 
         </div>
     </main>
@@ -112,6 +108,30 @@
             <h1>Deseja solicitar este veiculo</h1>
             <p>Descrição</p>
             <input id="dessol" type="text">
+        </div>
+    </div>
+
+    <div id="card2">
+        <div id="modal_ss">
+            <p id="sair_modal_ss" onclick="fecharmodal2()">x</p>
+            
+            <h1>Deseja Adicionar um veiculo</h1>
+            <p>Modelo</p>
+            <input id="modvei" type="text">
+
+            <p>Tipo</p>
+            <input id="tipovei" type="text">
+
+            <p>Status</p>
+            <input id="stavei" type="text">
+
+            <p>Estado</p>
+            <input id="estvei" type="text">
+
+            <p>Ultima Manutenção</p>
+            <input id="ultvei" type="text">
+
+            <button onclick="cadcar()" id="cadvei">CADASTRAR</button>
         </div>
     </div>
 </body>
