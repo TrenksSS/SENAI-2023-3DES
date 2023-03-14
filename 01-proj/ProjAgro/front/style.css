@@ -93,6 +93,11 @@ main{
     height: 40vh;
     background-color: white;
 }
+.momo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 #areaf:hover{
     transition: 0.2s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -222,14 +227,17 @@ main{
 area do veiculo ------------------------------------------------------- */
 
 #crf{
-    width: 70px;
-    height: 70px;
+    position: absolute;
+    left: 190px;
+    width: 90px;
+    height: 90px;
 }
 
 #idc{
     display: flex;
     position: absolute;
     font-size: 25px;
+    font-weight: bold;
     top: 100px;
     left: 20px;
 }
@@ -238,6 +246,7 @@ area do veiculo ------------------------------------------------------- */
     display: flex;
     position: absolute;
     font-size: 25px;
+    font-weight: bold;
     top: 150px;
     left: 20px;
 }
@@ -246,6 +255,7 @@ area do veiculo ------------------------------------------------------- */
     display: flex;
     position: absolute;
     font-size: 25px;
+    font-weight: bold;
     top: 150px;
     right: 20px;
 }
@@ -254,6 +264,7 @@ area do veiculo ------------------------------------------------------- */
     display: flex;
     position: absolute;
     font-size: 25px;
+    font-weight: bold;
     top: 190px;
     right: 20px;
 }
@@ -415,6 +426,60 @@ h1{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #cadvei:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#card3{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+#modal_sss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    width: 50vw;
+    height: 60vh;
+    background-color: aliceblue;
+}
+#sair_modal_sss{
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#modal_sss p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#modal_sss input{
+    width: 350px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#caduse{
+    position: absolute;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(58, 250, 58);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#caduse:hover{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 8px 14px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 

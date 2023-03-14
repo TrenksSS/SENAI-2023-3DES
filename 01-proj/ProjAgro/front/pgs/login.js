@@ -22,15 +22,16 @@ const login = () => {
             'Content-Type':'application/json'
         },
         body: JSON.stringify(usuario)
-    }).then(response => { return response.status })
+    }).then(response => { return response.json()})
     .then(info => {
+        console.log(info)
         if(info != null ) {
-            console.log(info)
-            if(info == 201){
+            if(info.token == null){
                 alert('❌ Erro no Login: SENHA INVÁLIDA!')
-            } else if(info == 404){
-                alert('❌ Erro no Login: Usuario não ENCONTRADO!')
-            }else if(info == 200){
+            } else if(info.token != 200){
+                let ni = {"nivel":info.nivel, "nome":info.nome, "email":info.email}
+                console.log(info)
+                localStorage.setItem('usuario',JSON.stringify(ni))
                 window.location.href = "../index.html"
             }
         } else {

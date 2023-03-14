@@ -25,21 +25,23 @@
             <h1>HOME</h1>
         </div>
         
-        <div id="areaf">
+        <div  id ="areaf">
             <img id="userimg" src="assets/user.png" alt="usuario">
-            <div id="nomef">
+            <div class="momo model" >
+            
                 <p>Nome:</p>
-                <p>Fulano</p>
-            </div>
-            <div id="emailf">
+                <p id="noUse">Fulano</p>
+            
+            
                 <p>Email:</p>
-                <p>fulano@gmail.com</p>
-            </div>
-            <div id="cpff">
+                <p id="emUse">fulano@gmail.com</p>
+            
+            
                 <p>CPF:</p>
-                <p>***********</p>
-            </div>
-            <button id="nfun">
+                <p >093********</p>
+            
+        </div>
+            <button onclick="abrirmodal3()" id="nfun">
                 movo funcionário
             </button>
             <button onclick="abrirmodal2()" id="ncar">
@@ -77,7 +79,7 @@
         </div>
 
         <div id="b2">
-
+            <p></p>
         </div>
 
         <div id="b3">
@@ -134,6 +136,31 @@
             <input id="ultvei" type="text">
 
             <button onclick="cadcar()" id="cadvei">CADASTRAR</button>
+        </div>
+    </div>
+
+    <div id="card3">
+        <div id="modal_sss">
+            <p id="sair_modal_sss" onclick="fecharmodal3()">x</p>
+            
+            <h1>Cadastro de usuario</h1>
+            <p>Nome</p>
+            <input id="nouse" type="text">
+
+            <p>Email</p>
+            <input id="emuse" type="text">
+
+            <p>Senha</p>
+            <input id="seuse" type="text">
+
+            <p>Nivel</p>
+            <select id="niuse">
+                <option value="adm">Administrador</option>
+                <option value="use">Usuario</option>
+            </select>
+            
+
+            <button onclick="caduse()" id="caduse">CADASTRAR</button>
         </div>
     </div>
 </body>
